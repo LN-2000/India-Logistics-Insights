@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101f2b">
+<title>India Logistics Insights | The Cost of Moving Goods</title>
+<style>
+:root{--ink:#e7eef0;--muted:#a8b8bd;--paper:#0b151d;--white:#142631;--navy:#09131b;--navy2:#142d3a;--orange:#f08a52;--teal:#55b5a6;--line:#29404a;--pale:#1a303a;--gold:#efc778;--shadow:0 18px 50px rgba(0,0,0,.25)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-weight:350;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 44px));margin:auto}
+.topbar{position:sticky;top:0;z-index:10;background:rgba(16,36,49,.96);backdrop-filter:blur(12px);color:#fff;border-bottom:1px solid rgba(255,255,255,.1)}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-weight:600;letter-spacing:.12em;font-size:13px}.brand span{color:var(--orange)}.navlinks{display:flex;gap:22px;font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:#d2dce0}.navlinks a:hover{color:#fff}.menu{display:none}
+.hero{background:radial-gradient(circle at 78% 28%,rgba(45,139,131,.34),transparent 28%),linear-gradient(115deg,#102431 0%,#193747 65%,#244958 100%);color:#d4dde0;position:relative;overflow:hidden;padding:90px 0 76px}.hero:after{content:"";position:absolute;inset:auto -8% -150px 35%;height:350px;border:1px solid rgba(255,255,255,.13);border-radius:50%;transform:rotate(-12deg);box-shadow:0 0 0 35px rgba(255,255,255,.025),0 0 0 70px rgba(255,255,255,.02),0 0 0 105px rgba(255,255,255,.015)}.eyebrow{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:600}.hero h1{font-family:Georgia,serif;font-size:clamp(46px,7vw,82px);line-height:.99;letter-spacing:-.045em;font-weight:500;max-width:780px;margin:22px 0}.hero h1 em{color:#f0a06f;font-weight:400}.hero p{font-size:17px;line-height:1.75;color:#b9c8cd;max-width:650px}.hero-meta{display:flex;gap:24px;flex-wrap:wrap;margin-top:34px;color:#aabdc3;font-size:12px;letter-spacing:.05em}.hero-art{position:absolute;right:5%;bottom:15px;width:min(39%,470px);opacity:.92}.hero-art svg{width:100%;height:auto}
+.intro{padding:76px 0 60px;display:grid;grid-template-columns:.7fr 1.3fr;gap:60px;align-items:start}.section-kicker{color:var(--orange);font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}.intro h2,.section-head h2{font:500 clamp(30px,4vw,46px)/1.1 Georgia,serif;letter-spacing:-.03em;margin:12px 0}.intro p{font-size:16px;color:#b5c4c8;margin:0 0 14px}.intro-note{border-left:3px solid var(--orange);padding:5px 0 5px 18px;color:#586a73;font-size:13px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:8px auto 76px}.stat{background:#142631;padding:24px 26px;border:1px solid var(--line);border-radius:5px}.stat strong{display:block;font:500 34px Georgia,serif;color:var(--navy)}.stat span{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-top:4px}
+.section{padding:76px 0;border-top:1px solid var(--line)}.section.dark{background:var(--navy);color:#d4dde0;border:0}.section.dark .section-kicker{color:var(--gold)}.section-head{display:grid;grid-template-columns:100px 1fr;gap:26px;align-items:start;margin-bottom:38px}.num{font:500 42px Georgia,serif;color:var(--orange);line-height:1}.section-head h2{margin:0 0 12px}.section-head p{margin:0;color:#aab9be;max-width:760px}.dark .section-head p{color:#aebfc4}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}.panel{background:#142631;border:1px solid var(--line);border-radius:6px;padding:26px;box-shadow:0 8px 24px rgba(16,36,49,.035)}.dark .panel{background:#193747;border-color:rgba(255,255,255,.12);box-shadow:none}.panel h3{font:500 23px Georgia,serif;margin:0 0 8px}.panel p{font-size:13px;color:#aebdc2;margin:0 0 16px}.dark .panel p{color:#c1d0d2}.chart{width:100%;height:auto;display:block}.caption{font-size:11px;color:#9aadb3;margin-top:12px}.dark .caption{color:#aebfc3}
+.callout{background:#2b2826;border-left:4px solid var(--orange);padding:18px 22px;margin-top:22px;font-size:14px;color:#f1d6c7}.dark .callout{background:rgba(232,121,66,.13);color:#f0d5c4;border-color:var(--orange)}
+.insight-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.insight{padding:25px;background:#142631;border:1px solid var(--line);border-radius:5px;min-height:185px}.insight .tag{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);font-weight:600}.insight h3{font:500 21px Georgia,serif;margin:13px 0 8px}.insight p{font-size:13px;color:#aebdc2;margin:0}
+.route-visual{background:#142631;border:1px solid var(--line);border-radius:6px;padding:26px}.route-line{display:flex;align-items:center;gap:10px;margin:18px 0}.node{background:#203942;padding:13px 15px;border-radius:4px;font-size:12px;font-weight:600;flex:1;text-align:center}.node.primary{background:#244b4b;color:#b8e2d9}.arrow{color:var(--orange);font-weight:900}.break-even{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px}.break-even div{padding:20px;background:var(--navy);color:#fff;border-radius:5px}.break-even strong{font:500 32px Georgia,serif;color:var(--gold);display:block}.break-even span{font-size:12px;color:#d3dfe1}
+.takeaways{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.take{border-top:2px solid var(--orange);padding:18px 14px;background:rgba(255,255,255,.06)}.take b{font:500 20px Georgia,serif;color:var(--gold);display:block;margin-bottom:8px}.take p{font-size:12px;color:#d1dcdf;margin:0}
+.method{display:grid;grid-template-columns:1fr 1fr;gap:28px}.method h3{font:500 23px Georgia,serif}.method li{font-size:13px;color:#b5c4c8;margin:10px 0;padding-left:4px}.footer{background:#0b1a23;color:#d6e0e2;padding:36px 0}.footer-inner{display:flex;justify-content:space-between;gap:24px;align-items:end}.footer strong{font-size:12px;letter-spacing:.15em}.footer p{font-size:11px;color:#91a3aa;margin:8px 0 0}.footer .author{text-align:right}
+.pill{display:inline-block;border:1px solid rgba(255,255,255,.25);border-radius:30px;padding:7px 12px;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#dce8e8}
+@media(max-width:760px){.navlinks{display:none}.menu{display:block;color:#d4dde0}.hero{padding:65px 0 50px}.hero-art{position:relative;right:auto;bottom:auto;width:90%;margin:30px auto -25px}.intro{grid-template-columns:1fr;gap:20px;padding:54px 0 40px}.stats{grid-template-columns:1fr;margin-bottom:45px}.section{padding:56px 0}.section-head{grid-template-columns:52px 1fr;gap:14px}.num{font-size:30px}.split,.method{grid-template-columns:1fr}.insight-grid{grid-template-columns:1fr}.takeaways{grid-template-columns:1fr 1fr}.footer-inner{display:block}.footer .author{text-align:left;margin-top:22px}.route-line{gap:5px}.node{font-size:10px;padding:10px 5px}.break-even{grid-template-columns:1fr 1fr}}
+@media print{.topbar{position:static}.hero{print-color-adjust:exact}.section.dark,.footer{print-color-adjust:exact}a{color:inherit}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="wrap nav"><a class="brand" href="#top">INDIA <span>LOGISTICS</span> INSIGHTS</a><nav class="navlinks"><a href="#gateways">Gateways</a><a href="#freight">Freight economics</a><a href="#scale">Scale</a><a href="#patterns">Freight patterns</a><a href="#multimodal">Multimodal</a><a href="#method">Methodology</a></nav><span class="menu">DATA / INDIA</span></div></header>
+<main id="top">
+<section class="hero"><div class="wrap">
+<div class="eyebrow">A data-led perspective on India's freight network</div>
+<h1>The cost of<br><em>moving goods.</em></h1>
+<p>Understanding India's logistics landscape through maritime gateways, freight economics, business scale and the case for multimodal transportation.</p>
+<div class="hero-meta"><span>INDIA · LOGISTICS · TRANSPORT</span><span>RESEARCH & DATA VISUALISATION</span><span class="pill">Power BI analysis</span></div>
+<div class="hero-art" aria-hidden="true">
+<svg viewBox="0 0 520 270" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="sea" x2="0" y2="1"><stop stop-color="#2d8b83" stop-opacity=".55"/><stop offset="1" stop-color="#102431" stop-opacity="0"/></linearGradient></defs>
+<path d="M0 218 Q110 202 220 218 T520 210 V270 H0Z" fill="url(#sea)"/>
+<path d="M42 174h390l-35 47H92Z" fill="#e87942"/><path d="M65 164h350v13H65Z" fill="#f1b16f"/><path d="M105 128h65v35h-65zM177 128h65v35h-65zM249 128h65v35h-65zM321 128h65v35h-65z" fill="#e9bd68"/><path d="M105 128h65v7h-65zM177 128h65v7h-65zM249 128h65v7h-65zM321 128h65v7h-65z" fill="#fff" opacity=".4"/>
+<path d="M76 165V90h7v75M76 95l58 25-4 7-54-23" stroke="#e8f0ed" stroke-width="3" fill="none"/><path d="M380 126V56h6v70M383 62l70 32-4 7-66-30" stroke="#e8f0ed" stroke-width="3" fill="none"/>
+<path d="M0 235 Q75 224 150 235T300 235T520 232" stroke="#78b8ad" stroke-width="2" fill="none" opacity=".65"/><path d="M0 249 Q75 238 150 249T300 249T520 246" stroke="#78b8ad" stroke-width="1.5" fill="none" opacity=".4"/>
+<g fill="#f5f3ed" opacity=".9"><rect x="140" y="98" width="28" height="27"/><rect x="212" y="98" width="28" height="27"/><rect x="284" y="98" width="28" height="27"/><rect x="356" y="98" width="28" height="27"/></g>
+<g fill="#193747"><rect x="147" y="105" width="8" height="8"/><rect x="219" y="105" width="8" height="8"/><rect x="291" y="105" width="8" height="8"/><rect x="363" y="105" width="8" height="8"/></g>
+</svg></div>
+</div></section>
+<section class="wrap intro"><div><div class="section-kicker">The big picture</div><h2>Logistics is more than distance.</h2></div><div><p>India's logistics sector connects producers, markets and consumers across the country. Yet moving goods is not simply a matter of how far they travel. Transportation costs, infrastructure availability, business scale and the choice of transport mode all shape the economics of freight movement.</p><p>This analysis brings together published data to explore where cargo moves, what freight costs, why smaller businesses face a different cost burden, and when combining road and rail can make economic sense.</p><div class="intro-note">The central question: how can India's freight network balance cost, connectivity and service requirements?</div></div></section>
+<div class="wrap stats">
+<div class="stat"><strong>₹1.96</strong><span>Rail freight · per tonne-km</span></div><div class="stat"><strong>16.9%</strong><span>Logistics cost burden · firms up to ₹5 crore</span></div><div class="stat"><strong>600 km</strong><span>Indicative road–rail break-even · 50 km road legs</span></div>
+</div>
+<section class="section" id="gateways"><div class="wrap">
+<div class="section-head"><div class="num">01</div><div><div class="section-kicker">India's maritime gateways</div><h2>Where does India's cargo move?</h2><p>Ports are critical gateways for domestic and international trade. Their cargo-handling activity and geographical distribution influence how goods enter, leave and move through the country.</p></div></div>
+<div class="split">
+<div class="panel"><h3>A coastal network of gateways</h3><p>Port activity is distributed across India's western and eastern seaboards, linking industrial clusters and hinterland markets to global trade routes.</p>
+<svg class="chart" viewBox="0 0 680 560" role="img" aria-label="Two-dimensional map of India showing major maritime ports on the west and east coasts">
+<defs>
+ <linearGradient id="sea2" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#142f3d"/><stop offset="1" stop-color="#0b1d27"/></linearGradient>
+ <linearGradient id="land2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#294a49"/><stop offset="1" stop-color="#1d393d"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="680" height="560" rx="7" fill="url(#sea2)"/>
+<g stroke="#47636b" stroke-opacity=".24" stroke-width="1"><path d="M0 112H680M0 224H680M0 336H680M0 448H680M136 0V560M272 0V560M408 0V560M544 0V560"/></g>
+<!-- Simplified but complete mainland India outline, with north-east corridor -->
+<path d="M235 34 L273 43 298 58 323 64 346 84 364 100 388 111 411 128 433 145 456 151 480 143 502 132 524 138 542 153 565 160 587 171 610 185 603 202 579 207 560 219 543 234 528 247 510 258 493 267 476 282 462 300 449 317 437 336 426 356 416 376 404 396 392 416 379 439 364 461 350 483 336 505 322 526 309 545 296 532 285 513 274 491 262 468 251 444 239 419 227 393 216 368 205 342 195 315 184 289 173 263 162 238 151 213 143 188 148 165 158 143 171 122 185 101 198 80 215 58Z" fill="url(#land2)" stroke="#8ba79b" stroke-width="2.3"/>
+<!-- Gujarat / Kathiawar and west coast definition -->
+<path d="M235 34L216 58 198 80 185 101 171 122 158 143 148 165 143 188 151 213 162 238 173 263 184 289" fill="none" stroke="#9db6a7" stroke-opacity=".65" stroke-width="1.4"/>
+<!-- Northeast states and narrow Siliguri connection -->
+<path d="M487 145L514 119 546 107 578 111 609 126 633 146 622 166 595 174 570 164 542 157 524 138" fill="#294a49" stroke="#8ba79b" stroke-width="2"/>
+<path d="M603 184L628 180 648 191 641 207 620 211 601 201" fill="#294a49" stroke="#8ba79b" stroke-width="1.5"/>
+<!-- Sri Lanka -->
+<path d="M355 503l13 11 2 18-10 14-9-12z" fill="#294a49" stroke="#8ba79b" stroke-width="1.5"/>
+<!-- state-like internal boundaries for 2D cartographic texture -->
+<g fill="none" stroke="#86a296" stroke-opacity=".25" stroke-width="1.1">
+ <path d="M191 137L276 155 352 141 427 162 498 177"/>
+ <path d="M157 211L246 222 329 211 410 227 488 224"/>
+ <path d="M180 277L259 269 337 278 414 270 470 291"/>
+ <path d="M208 342L282 328 353 344 429 327"/>
+ <path d="M236 405L301 389 367 405 418 387"/>
+ <path d="M268 465L321 449 379 439"/>
+ <path d="M250 78L265 166 254 250 276 340 298 427"/>
+ <path d="M346 84L335 167 354 251 351 340 365 421"/>
+</g>
+<g fill="#a9c0c2" font-family="Arial,sans-serif" font-size="11" letter-spacing="2" opacity=".8"><text x="18" y="28">ARABIAN SEA</text><text x="493" y="28">BAY OF BENGAL</text></g>
+<text x="305" y="247" font-family="Arial,sans-serif" font-size="20" letter-spacing="5" fill="#d4e1d9" opacity=".65">INDIA</text>
+<!-- Approximate port points: positions are geographic, not a route map -->
+<g filter="url(#glow)" fill="#3b83ff" fill-opacity=".22" stroke="#6ca7ff" stroke-width="2">
+ <circle cx="184" cy="150" r="13"/><!-- Kandla -->
+ <circle cx="171" cy="213" r="16"/><!-- Mumbai/JNPT -->
+ <circle cx="177" cy="292" r="11"/><!-- Mormugao -->
+ <circle cx="194" cy="350" r="10"/><!-- New Mangalore -->
+ <circle cx="237" cy="444" r="12"/><!-- Kochi -->
+ <circle cx="359" cy="425" r="14"/><!-- Chennai -->
+ <circle cx="424" cy="328" r="13"/><!-- Visakhapatnam -->
+ <circle cx="474" cy="266" r="12"/><!-- Paradip -->
+ <circle cx="510" cy="202" r="10"/><!-- Haldia/Kolkata region -->
+</g>
+<g fill="#f1f5f3" stroke="#0b1d27" stroke-width="2">
+ <circle cx="184" cy="150" r="4"/><circle cx="171" cy="213" r="4"/><circle cx="177" cy="292" r="4"/><circle cx="194" cy="350" r="4"/><circle cx="237" cy="444" r="4"/><circle cx="359" cy="425" r="4"/><circle cx="424" cy="328" r="4"/><circle cx="474" cy="266" r="4"/><circle cx="510" cy="202" r="4"/>
+</g>
+<g font-family="Arial,sans-serif" font-size="11" fill="#e1eaeb">
+ <text x="72" y="144">Deendayal (Kandla)</text><text x="70" y="207">Mumbai / JNPT</text><text x="81" y="294">Mormugao</text><text x="84" y="356">New Mangalore</text><text x="182" y="474">Kochi</text><text x="365" y="448">Chennai</text><text x="438" y="347">Visakhapatnam</text><text x="487" y="267">Paradip</text><text x="522" y="199">Haldia / Kolkata</text>
+</g>
+<g stroke="#dce8e8" stroke-opacity=".55" stroke-width="1"><path d="M184 150L163 137M171 213L145 203M177 292L150 292M194 350L160 361M237 444L221 461M359 425L378 438M424 328L446 340M474 266L497 278M510 202L531 187"/></g>
+<g transform="translate(20 510)" font-family="Arial,sans-serif" font-size="10" fill="#b7c8cb"><circle cx="8" cy="8" r="6" fill="#3b83ff" fill-opacity=".3" stroke="#6ca7ff"/><text x="23" y="12">Major port location (approximate)</text><text x="0" y="34" fill="#839ba1">2D SCHEMATIC MAP · PORT MARKERS ARE NOT TO SCALE</text></g>
+</svg><div class="caption">Two-dimensional schematic of mainland India and the north-east, with major maritime port locations marked on the correct coastal regions. Marker positions are approximate; use your source data for exact port coordinates and cargo-volume bubble sizes.</div></div>
+<div class="panel"><h3>Reading the port landscape</h3><p>Port-level cargo distribution helps identify the concentration of maritime activity and the importance of key coastal regions in India's logistics network.</p>
+<div class="callout">A port's significance is not determined by cargo volume alone. Hinterland connectivity, industrial proximity, vessel access and evacuation capacity also shape its role in the logistics system.</div><p style="margin-top:18px">Figure 1 in the original analysis presents cargo handled across India's major maritime ports for FY 2023–24.</p><div class="caption">Source: Ministry of Ports, Shipping and Waterways, <i>Update on Indian Port Sector</i>, FY 2023–24.</div></div>
+</div></div></section>
+<section class="section dark" id="freight"><div class="wrap">
+<div class="section-head"><div class="num">02</div><div><div class="section-kicker">The economics of freight</div><h2>The transportation cost dilemma.</h2><p>Road, rail and waterways have different cost structures, capabilities and operational advantages. Average cost is an important starting point—but not the entire decision.</p></div></div>
+<div class="split">
+<div class="panel"><h3>Average freight cost</h3><p>Reported average transportation cost, ₹ per tonne-kilometre.</p>
+<svg class="chart" viewBox="0 0 520 285" role="img" aria-label="Bar chart comparing road rail and waterways freight cost">
+<g font-family="Arial" font-size="12" fill="#d2dfe0"><text x="5" y="54">Road</text><text x="5" y="132">Rail</text><text x="5" y="210">Waterways</text></g>
+<g fill="#365666"><rect x="105" y="30" width="350" height="35" rx="3"/><rect x="105" y="108" width="350" height="35" rx="3"/><rect x="105" y="186" width="350" height="35" rx="3"/></g>
+<rect x="105" y="30" width="331" height="35" rx="3" fill="#e87942"/><rect x="105" y="108" width="172" height="35" rx="3" fill="#67b4a8"/><rect x="105" y="186" width="201" height="35" rx="3" fill="#e9bd68"/>
+<g font-family="Arial" font-size="14" font-weight="700" fill="#fff"><text x="445" y="53">₹3.78</text><text x="286" y="131">₹1.96</text><text x="315" y="209">₹2.30</text></g>
+<g stroke="#718c96" stroke-dasharray="3 5"><path d="M105 20V240"/><path d="M192 20V240"/><path d="M280 20V240"/><path d="M367 20V240"/><path d="M455 20V240"/></g>
+<g font-family="Arial" font-size="10" fill="#aebfc3"><text x="100" y="260">0</text><text x="185" y="260">1</text><text x="273" y="260">2</text><text x="360" y="260">3</text><text x="448" y="260">4</text></g>
+</svg><div class="caption">Source: NCAER, Assessment of Logistics Cost in India, September 2025. Values are reported averages, not fixed tariffs.</div></div>
+<div class="panel"><h3>The lowest rate isn't always the lowest total cost</h3><p>Rail and waterways appear more economical on a tonne-kilometre basis. But the complete logistics cost also depends on:</p>
+<ul style="font-size:13px;color:#d6e0e2;padding-left:18px"><li>First- and last-mile road movement</li><li>Handling, loading and transshipment</li><li>Network connectivity and service frequency</li><li>Delivery flexibility and time sensitivity</li></ul>
+<div class="callout">Mode selection is a network decision—not simply a comparison of three rates.</div></div>
+</div></div></section>
+<section class="section" id="scale"><div class="wrap">
+<div class="section-head"><div class="num">03</div><div><div class="section-kicker">The scale advantage</div><h2>Why do smaller businesses bear higher logistics costs?</h2><p>Logistics costs as a share of output decline across the firm-size categories reported in the NCAER industry survey.</p></div></div>
+<div class="split">
+<div class="panel"><h3>Logistics cost as % of output</h3><p>Firm turnover category.</p>
+<svg class="chart" viewBox="0 0 520 300" role="img" aria-label="Bar chart showing logistics cost burden by firm turnover">
+<g font-family="Arial" font-size="11" fill="#53636d"><text x="4" y="49">Up to ₹5 cr</text><text x="4" y="111">₹5–50 cr</text><text x="4" y="173">₹50–250 cr</text><text x="4" y="235">Above ₹250 cr</text></g>
+<g fill="#e9efeb"><rect x="118" y="26" width="330" height="30" rx="3"/><rect x="118" y="88" width="330" height="30" rx="3"/><rect x="118" y="150" width="330" height="30" rx="3"/><rect x="118" y="212" width="330" height="30" rx="3"/></g>
+<g fill="#e87942"><rect x="118" y="26" width="310" height="30" rx="3"/></g><g fill="#d99a69"><rect x="118" y="88" width="251" height="30" rx="3"/></g><g fill="#7faea3"><rect x="118" y="150" width="205" height="30" rx="3"/></g><g fill="#2d8b83"><rect x="118" y="212" width="139" height="30" rx="3"/></g>
+<g font-family="Arial" font-size="13" font-weight="700" fill="#142532"><text x="435" y="47">16.9%</text><text x="376" y="109">13.7%</text><text x="330" y="171">11.2%</text><text x="264" y="233">7.6%</text></g>
+</svg><div class="caption">Source: NCAER, Assessment of Logistics Cost in India, September 2025; Figure 4.3.</div></div>
+<div class="panel"><h3>Scale changes the economics</h3><p>Smaller firms may have less negotiating power, lower shipment volumes and fewer options to optimise transport networks.</p>
+<div class="callout">The gap between the smallest and largest turnover categories is 9.3 percentage points.</div><p style="margin-top:18px">Larger businesses can often consolidate shipments, negotiate better rates and build more flexible distribution networks. These advantages can reduce logistics expenditure relative to output.</p></div>
+</div></div></section>
+<section class="section" id="patterns"><div class="wrap">
+<div class="section-head"><div class="num">04</div><div><div class="section-kicker">Understanding freight patterns</div><h2>Distance is only part of the equation.</h2><p>Freight costs vary across origin–destination routes. Distance matters, but geography, route characteristics and operating conditions also influence expenditure.</p></div></div>
+<div class="split">
+<div class="panel"><h3>How to read route-level variation</h3><p>A useful comparison looks beyond straight-line distance and considers the full origin–destination movement.</p>
+<svg class="chart" viewBox="0 0 520 290" role="img" aria-label="Illustrative route network diagram">
+<rect width="520" height="290" rx="5" fill="#edf2ee"/>
+<g stroke="#b9c9c0" stroke-width="1"><path d="M0 70H520M0 145H520M0 220H520M90 0V290M190 0V290M290 0V290M390 0V290M490 0V290"/></g>
+<path d="M64 220 Q150 80 235 145 T460 55" fill="none" stroke="#e87942" stroke-width="5" stroke-linecap="round"/><path d="M64 220 Q170 245 285 190 T460 55" fill="none" stroke="#2d8b83" stroke-width="3" stroke-dasharray="7 7"/>
+<g fill="#142532" stroke="#fff" stroke-width="3"><circle cx="64" cy="220" r="9"/><circle cx="235" cy="145" r="9"/><circle cx="460" cy="55" r="9"/></g>
+<g font-family="Arial" font-size="12" fill="#30434b"><text x="32" y="247">Origin</text><text x="205" y="124">Transit</text><text x="430" y="35">Destination</text><text x="92" y="99" fill="#c35e2d">Route A</text><text x="278" y="242" fill="#26756e">Route B</text></g>
+</svg><div class="caption">Conceptual illustration of alternative route paths; not actual OD observations.</div></div>
+<div class="panel"><h3>What the analysis compares</h3><ul style="font-size:14px;color:#b5c4c8;padding-left:19px"><li>Distance bands and their representative midpoints</li><li>Geographical zones and origin–destination pairs</li><li>Average freight expenditure across routes</li><li>Differences that distance alone may not explain</li></ul><div class="callout">Distance-band midpoints are representative values, not exact route distances. Bubble sizes in the original Power BI visual encode differences in average OD freight expenditure.</div><div class="caption">Source: NCAER, Assessment of Logistics Cost in India, September 2025; Figure 4.3.</div></div>
+</div></div></section>
+<section class="section dark" id="multimodal"><div class="wrap">
+<div class="section-head"><div class="num">05</div><div><div class="section-kicker">The multimodal advantage</div><h2>When does rail become economically viable?</h2><p>Rail's lower line-haul cost can be offset by road movement at both ends. The break-even distance therefore changes with first- and last-mile requirements.</p></div></div>
+<div class="panel"><h3>Road–rail–road: the combined journey</h3><p>Illustrative structure of a multimodal freight movement.</p>
+<div class="route-visual"><div class="route-line"><div class="node">Road leg<br><small>Origin pickup</small></div><div class="arrow">→</div><div class="node primary">Rail leg<br><small>Long-haul movement</small></div><div class="arrow">→</div><div class="node">Road leg<br><small>Final delivery</small></div></div></div>
+<div class="break-even"><div><strong>≈ 600 km</strong><span>Indicative break-even when first- and last-mile road legs are 50 km each.</span></div><div><strong>≈ 1,000 km</strong><span>Indicative break-even when first- and last-mile road legs are 100 km each.</span></div></div>
+<div class="callout">Longer road legs increase the distance at which rail becomes competitive. Multimodal transportation is not automatically cheaper; its viability depends on the network around the rail movement.</div>
+<div class="caption">Source: NCAER, Assessment of Logistics Cost in India, September 2025. Scenario-specific break-even estimates.</div>
+</div></div></section>
+<section class="section dark" style="background:#142f3d;padding-top:54px;padding-bottom:70px"><div class="wrap">
+<div class="section-kicker">06 / What does the data tell us?</div><h2 style="font:500 clamp(30px,4vw,44px)/1.1 Georgia,serif;margin:12px 0 30px">Five signals shaping India's logistics economics.</h2>
+<div class="takeaways">
+<div class="take"><b>01</b><p><strong>Port concentration</strong><br>Maritime gateways shape the flow of domestic and international cargo.</p></div>
+<div class="take"><b>02</b><p><strong>Mode selection</strong><br>Rail and waterways report lower average freight costs per tonne-km than road.</p></div>
+<div class="take"><b>03</b><p><strong>Scale advantage</strong><br>Smaller firms carry a higher logistics cost burden relative to output.</p></div>
+<div class="take"><b>04</b><p><strong>Geography matters</strong><br>Freight expenditure varies across origin–destination routes.</p></div>
+<div class="take"><b>05</b><p><strong>Network integration</strong><br>Road and rail can complement each other over suitable distances.</p></div>
+</div>
+<p style="max-width:780px;color:#d3dfe1;margin:34px 0 0;font:italic 19px Georgia,serif">The opportunity is not to replace one mode with another, but to design networks that balance cost, distance, connectivity and service requirements.</p>
+</div></section>
+<section class="section" id="method"><div class="wrap">
+<div class="section-head"><div class="num">07</div><div><div class="section-kicker">Data & methodology</div><h2>Sources, scope and limitations.</h2><p>The analysis combines published logistics cost estimates, firm-size comparisons, origin–destination freight data, port cargo statistics and scenario-based multimodal analysis.</p></div></div>
+<div class="method">
+<div class="panel"><h3>Principal sources</h3><ol><li><strong>Assessment of Logistics Cost in India</strong><br>National Council of Applied Economic Research (NCAER), commissioned by DPIIT, September 2025.</li><li><strong>Update on Indian Port Sector</strong><br>Ministry of Ports, Shipping and Waterways, Government of India, FY 2023–24.</li></ol><h3>Visualisation approach</h3><p style="font-size:13px;color:#b5c4c8">Published data was organised and transformed into comparative visualisations and analytical inferences using Power BI.</p></div>
+<div class="panel"><h3>Interpretation notes</h3><ul><li>Freight costs vary by route, commodity, volume and operating conditions.</li><li>Average estimates should not be interpreted as fixed market tariffs.</li><li>Multimodal break-even distances are scenario-specific.</li><li>Distance-band midpoints are representative values, not exact route distances.</li><li>Schematic graphics in this redesigned page are explanatory, not substitutes for the original Power BI figures.</li></ul></div>
+</div>
+</div></section>
+</main>
+<footer class="footer"><div class="wrap footer-inner"><div><strong>INDIA LOGISTICS INSIGHTS</strong><p>Data-led perspectives on supply chains, transportation and infrastructure.</p><p>© 2026 · Research and data visualisation</p></div><div class="author"><strong>BY LAKSHMI NARASIMHAN</strong><p>PGDM · Operations & Business Analytics</p><p>An analytical perspective on India's evolving logistics landscape.</p></div></div></footer>
+</body></html>
